@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    /*overflow: hidden;*/
+}
+
+.flex {
+  display:flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+button.start {
+    padding: 15px 25px;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: 900;
+    color: #ffffff;
+    text-shadow: 0 3px 3px #333333;
+    background-image: linear-gradient(45deg, #00ff00, #ffff00 );
+    cursor: pointer;
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+}
+
+button.start:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 12px #ffff0077;
+}
+
+#game-container {
+  display: none;
+  width: 800px;
+}
+
+#info {
+    color: white;
+    font-size: 20px;
+    border: 2px solid #ffffff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 12px 12px 0 0;
+}
+#info .info-span {
+  padding: 0 100px;
+}
+
+.question {
+    text-align: center;
+    padding: 10px 0;
+    border: 2px solid #ffffff;
+    margin-top: 10px;
+    height: 120px;
+    font-size: 30px;
+    color: #00ff00;
+    text-shadow: -2px 3px 10px #ffffff;
+}
+
+.ans {
+    color: white;
+    font-size: 20px;
+    width: 385px;
+    text-align: center;
+    border: 2px solid #ffffff;
+    padding: 5px 0;
+    margin-top: 10px;
+    cursor:pointer;
+    transition: box-shadow 0.6s ease;
+}
+.ans:hover {
+    box-shadow: inset 0 0 6px 4px #00ff00;
+}
+
+#ans1, #ans3 {
+    margin-right: 10px;
+}
+#ans2, #ans4 {
+    margin-left: 10px;
+}
+
+#ans3 {
+    border-radius: 0 0 0 12px;
+}
+#ans4 {
+    border-radius: 0 0 12px 0;
+}
+
+#result {
+    display: none;
+
+    text-align: center;
+    padding: 10px 0;
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+    height: 120px;
+    width: 800px;
+    font-size: 40px;
+    color: #00ff00;
+    text-shadow: -2px 3px 10px #ffffff;
+}
+
+@media (max-width: 920px) {
+    #result {
+        width: 420px;
+    }
+    #game-container {
+        width: 490px;
+    }
+
+    .ans3 {
+        border-radius: 0px;
+    }
+
+    .asn4 {
+        border-radius: 0px 0px 12px 12px;
+    }
+}
+
+@media (max-width: 720px) {
+
+}
